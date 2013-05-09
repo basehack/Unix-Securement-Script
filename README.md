@@ -15,11 +15,11 @@ Ever root a server and wanted to secure it for yourself? This script secures the
  
  Keep in mind this is a quick draft I made in 3 minutes, I have many more features to come such as:
  
-  • An LD_PRELOAD rootkit hooker
-  -
-  • A random SSH port chooser
-  -
-  • /etc/shadow password changer 
+   An LD_PRELOAD rootkit hooker
+  
+   A random SSH port chooser
+  
+   /etc/shadow password changer 
   
 --
 
