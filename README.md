@@ -26,6 +26,7 @@ Ever root a server and wanted to secure it for yourself? This script secures the
 --
 
 Currently works on:
+  
   Debian and Ubuntu
  
  Support coming soon:
