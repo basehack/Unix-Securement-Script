@@ -5,9 +5,11 @@ Secures rooted *nix servers - http://basehack.net/member.php?action=profile&amp;
 
 Ever root a server and wanted to secure it for yourself? This script secures the box for you with features such as:
 
- • iptables configuration to make it so only you can access it
- • A reverse-shell
- • Rootkit scanner
+  iptables configuration to make it so only you can access it
+ 
+  A reverse-shell
+ 
+  Rootkit scanner
  
  And more.
  
@@ -24,12 +26,12 @@ Ever root a server and wanted to secure it for yourself? This script secures the
 --
 
 Currently works on:
- • Debian
- • Ubuntu
+  Debian
+  Ubuntu
  
  Support coming soon:
  
-  • CentOS
-  • Arch
-  • Gentoo
-  • Crunchbang
+   CentOS
+   Arch
+   Gentoo
+   Crunchbang
