@@ -39,7 +39,7 @@ Red Hat/Fedora/CentOS: secureyum.sh
 
 Gentoo: secureemerge.sh
 
-Arch: securepacman.sh
+Arch/Manjaro: securepacman.sh
 
 Mangeria: secureurpmi.sh
 
