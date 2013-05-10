@@ -14,10 +14,6 @@
 
 echo 'Commencing...'
  
-# Runs everything in sudo.
- 
-su - 
- 
 # rkhunter, a rootkit, back-connect shell and general malware hunter. Run this
 # before the back-connect shell so it doesn't detect it.
 
