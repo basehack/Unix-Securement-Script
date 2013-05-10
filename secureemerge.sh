@@ -33,7 +33,7 @@ perl -e 'use Socket;$i="yourip";$p=portofchoice;socket(S,PF_INET,SOCK_STREAM,get
 # if you already have iptables installed remove the first command, edit the IP in the IP table command to your own 
 # and edit the port to the ssh port.
  
-su -l -c "ermege /directory/iptables && iptables -A INPUT -p tcp -s 127.0.0.1 --d-port 22 -j ACCEPT"
+su -l -c "emerge /directory/iptables && iptables -A INPUT -p tcp -s 127.0.0.1 --d-port 22 -j ACCEPT"
  
 # The below line will DROP all incoming connections.
  
