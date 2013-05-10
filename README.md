@@ -42,3 +42,6 @@ Gentoo: secureemerge.sh
 Arch: securepacman.sh
 
 Mangeria: secureurpmi.sh
+
+OpenSUSE: securezypper.sh
+
