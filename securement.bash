@@ -10,6 +10,8 @@
 #                      #
 ########################
  
+#!/bin/sh
+
 echo 'Commencing...'
  
 # Runs everything in sudo.
