@@ -27,7 +27,7 @@ Ever root a server and wanted to secure it for yourself? This script secures the
 
 Currently works on:
   
-  CentOS, Gentoo, Arch, Debian, Ubuntu, Mint and CrunchBang.
+  CentOS, Gentoo, Arch, Mangeria Debian, Ubuntu, Mint and CrunchBang.
 
 --
 
@@ -40,3 +40,5 @@ CentOS: secureyum.sh
 Gentoo: secureemerge.sh
 
 Arch: securepacman.sh
+
+Mangeria: secureurpmi.sh
