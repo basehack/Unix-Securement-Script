@@ -27,8 +27,16 @@ Ever root a server and wanted to secure it for yourself? This script secures the
 
 Currently works on:
   
-  Debian and Ubuntu
+  CentOS, Debian and Ubuntu
  
  Support coming soon:
  
-   CentOS, Arch, Gentoo and Crunchbang
+  Arch, Gentoo and Crunchbang
+
+--
+
+Versions for each one:
+
+Debian/Ubuntu: secureapt.sh
+
+CentOS: secureyum.sh
