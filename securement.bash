@@ -18,12 +18,14 @@ su -
  
 # rkhunter, a rootkit, back-connect shell and general malware hunter. Run this
 # before the back-connect shell so it doesn't detect it.
+
+apt-get install rkhunter
  
 rkhunter --update
  
 rkhunter --check
  
-aptitude uninstall rkhunter
+aptitude remove rkhunter
  
 # Bash back-connect shell, delete it if you're using the Perl one.
  
@@ -52,4 +54,4 @@ exit
  
 echo 'Complete!'
  
-done
+
